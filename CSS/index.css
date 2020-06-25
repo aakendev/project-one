@@ -1,16 +1,93 @@
 /* Debug CSS */
-* {
+/** {
     border: 0.25px solid #f00;
-}
+}*/
 
 /* Reset CSS */
 html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
 }
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+}
 
 /* Arrange Element as Box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* CSS */
+header {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	background-color: #26d0c9;
+	color: #fff;
+}
+.header-logo {
+	width: 25%;
+}
+.header-logo h1 {
+	font-size: 6vw;
+	text-align: left;
+	line-height: 120px;
+}
+.header-title {
+	width: 50%;
+	text-align: center;
+}
+.header-title h1 {
+	font-size: 4vw;
+}
+.header-login {
+	width: 25%;
+}
+.header-login a {
+	display: block;
+	text-align: center;
+	font-size: 4vw;
+	padding: .5em;
+}
+
+.main-menu {
+	width: 100%;
+	height: 60%;
+	display: flex;
+}
+.menu-left {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.list {
+	height: 33.3%;
+	padding: 4em;
+}
+.menu-right {
+	width: 75%;
+}
+
+footer {
+	width: 100%;
+	height: 20%;
+	display: flex;
+}
+.contact-left {
+	width: 50%;
+}
+.contact-right {
+	width: 50%;
+}
