@@ -11,9 +11,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- JS -->
-    <script src="JS/index.js"></script>
+    
 
     <!-- Website Title -->
     <title>How to Make Building Together</title>
@@ -27,8 +27,12 @@
                 <div class="header-title">
                     <h1>PT. KITA BANGUN INDONESIA</h1>
                 </div>
-                <div class="header-login">
+                <div class="header-login" onmouseover="showmenu()" onmouseout="hidemenu()">
                     <a href="#">Log In</a>
+                    <div id="hidden-menu" class="hidden-menu">
+                        <a href="#">New User</a>
+                        <a href="#">Existing User</a>
+                    </div>
                 </div>
             </div>
 
@@ -37,14 +41,31 @@
             <div class="container">
 
                 <div class="menu-left">
-                     <span class="btn intro">Introduction</span>
-                     <span class="btn knowledge">Building Knowledge</span>
-                     <span class="btn guest">Book Guest</span>
+                     <span class="btn menu" onclick="showmenu1()">Introduction</span>
+                     <span class="btn menu" onclick="showmenu2()">Building Knowledge</span>
+                     <span class="btn menu" onclick="showmenu3()">Guest Book</span>
                      
                 </div>
                 <div class="menu-right">
                     <div class="explain">
-                        Explanation
+                        <!-- Made It Blank -->
+                        <div id="hidden-1" class="hidden-1">
+                            INTRODUCTION DETAILS
+                        </div>
+                        <div id="hidden-2" class="hidden-2">
+                            BUILDING KNOWLEDGE DETAILS
+                        </div>
+                        <div id="hidden-3" class="hidden-3">
+                            <form>
+                                <p>Name : (Required)</p>
+                                <input type="text" required>
+                                <p>Address : (Required)</p>
+                                <textarea required></textarea>
+                                <p>*) Required field must be filling to finish the submission</p>
+                                <input type="submit" value="Send">
+                            </form>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,10 +85,13 @@
                 <div class="contact2">
                     <ul>
                         <li>Whatsapp</li>
-                        <li>Email</li>
+                        <li>
+                            <span class="fa fa-envelope"></span>Email</li>
                     </ul>
                 </div>
             </div>
         </footer>
+
+        <script src="JS/index.js"></script>
 </body>
 </html>
