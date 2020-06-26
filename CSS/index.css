@@ -16,9 +16,10 @@ a {
 html, body {
 	width: 100%;
 	height: 100%;
+
 }
 body {
-	display: flex;
+	
 	flex-direction: column;
 }
 
@@ -30,8 +31,8 @@ body {
 /* CSS */
 header {
 	width: 100%;
-	height: 20%;
-	display: flex;
+	height: 10%;
+	
 	align-items: center;
 	background-color: #26d0c9;
 	color: #fff;
@@ -40,7 +41,7 @@ header {
 	width: 25%;
 }
 .header-logo h1 {
-	font-size: 6vw;
+	font-size: 2vw;
 	text-align: left;
 	line-height: 120px;
 }
@@ -49,7 +50,7 @@ header {
 	text-align: center;
 }
 .header-title h1 {
-	font-size: 4vw;
+	font-size: 3vw;
 }
 .header-login {
 	width: 25%;
@@ -57,24 +58,23 @@ header {
 .header-login a {
 	display: block;
 	text-align: center;
-	font-size: 4vw;
+	font-size: 2vw;
 	padding: .5em;
 }
 
 .main-menu {
 	width: 100%;
 	height: 60%;
-	display: flex;
+	
 }
 .menu-left {
 	width: 25%;
-	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 .list {
 	height: 33.3%;
-	padding: 4em;
+	padding: 3em;
 }
 .menu-right {
 	width: 75%;
@@ -82,12 +82,61 @@ header {
 
 footer {
 	width: 100%;
-	height: 20%;
-	display: flex;
+	height: 30%;
+	background-color: black;
+	color:white;
+
 }
-.contact-left {
-	width: 50%;
+
+.contact  {
+	width: 20%;
 }
-.contact-right {
-	width: 50%;
+.contact1 {
+	width: 40%;
 }
+.contact2 {
+	width: 40%;
+}
+
+.container{
+	}
+
+.intro {
+   background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.knowledge {
+   background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.guest {
+   background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.btn {
+  color: black
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+
+
+
+
