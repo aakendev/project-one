@@ -119,7 +119,9 @@ header {
     left: 1200px;
     width: 100%;
     height: 100%;
-    animation: sliding-left1s forwards;
+    animation-name: sliding-left;
+    animation-duration: 1s;
+    animation-fill-mode: forward;
 }
 .hidden-1 {
     background-image: url("../IMAGES/image_01.jpg");
