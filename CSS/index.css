@@ -8,154 +8,215 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
 }
 li {
-	list-style: none;
+    list-style: none;
 }
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 html, body {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 
 }
 body {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Arrange Element as Box */
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Animation */
 @keyframes sliding-left {
-	100%{left: 0px;}
+    100% {
+        left: 0px;
+    }
 }
 
 /* CSS */
 header {
-	width: 100%;
-	height: 10%;
-	display: flex;
-	align-items: center;
-	text-align: center;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 .header-logo {
-	width: 25%;
-	height: 100%;
+    width: 25%;
+    height: 100%;
 }
 .header-logo img {
-	margin: 0 auto;
-	display: block;
+    margin: 0 auto;
+    display: block;
 }
 .header-title {
-	width: 65%;
-	height: 100%;
+    width: 65%;
+    height: 100%;
 }
 .header-title h1 {
-	line-height: 4vw;
+    line-height: 4vw;
 }
 .header-login {
-	width: 10%;
-	text-align: center;
-	position: relative;
+    width: 10%;
+    text-align: center;
+    position: relative;
 }
 .header-login a {
-	display: block;
-	height: 100%;
-	line-height: 4vw;
-	border: 2px solid #f92472;
+    display: block;
+    height: 100%;
+    line-height: 4vw;
+    border: 2px solid #f92472;
 }
 .header-login a:hover {
-	background-color: #f92472;
-	color: #fff;
-	font-weight: bold;
-	font-size: 25px;
+    background-color: #f92472;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
 }
 .hidden-menu {
-	display: none;
-	position: absolute;
-	top: 65px;
-	z-index: 1;
-	width: 100%;
+    display: none;
+    position: absolute;
+    top: 65px;
+    z-index: 1;
+    width: 100%;
 }
 .hidden-menu a {
-	border: 2px solid #f92472;
-	display: block;
-	background-color: #fff;
+    border: 2px solid #f92472;
+    display: block;
+    background-color: #fff;
 }
 
 .main-menu {
-	width: 100%;
-	height: 70%;
-	display: flex;
+    width: 100%;
+    height: 70%;
+    display: flex;
 }
 .menu-left {
-	width: 25%;
-	display: flex;
-	flex-direction: column;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
 }
 .menu-left span {
-	width: 80%;
-	height: 30%;
-	line-height: 7vw;
-	font-size: 1.5vw;
+    width: 80%;
+    height: 30%;
+    line-height: 7vw;
+    font-size: 1.5vw;
 }
 .menu-right {
-	width: 75%;
+    width: 75%;
 }
 .explain {
-	width: 100%;
-	height: 100%;
-	position: relative;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 .hidden-1, .hidden-2, .hidden-3 {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 1200px;
-	width: 100%;
-	height: 100%;
-	animation: sliding-left 1s forwards;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 1200px;
+    width: 100%;
+    height: 100%;
+    animation: sliding-left1s forwards;
 }
 .hidden-1 {
-	background-image: url("../IMAGES/image_01.jpg");
-	background-size: cover;
-	color: #fff;
+    background-image: url("../IMAGES/image_01.jpg");
+    background-size: cover;
+    color: #fff;
 }
 .hidden-2 {
-	background-image: url("../IMAGES/image_02.jpg");
-	background-size: cover;
-	color: #fff;
+    background-image: url("../IMAGES/image_02.jpg");
+    background-size: cover;
+    color: #fff;
 }
 .hidden-3 {
-	background-image: url("../IMAGES/image_03.jpg");
-	background-size: cover;
-	color: #fff;
+    background-image: url("../IMAGES/image_03.jpg");
+    background-size: cover;
+    color: #fff;
 }
 .hidden-1-container, .hidden-2-container, .hidden-3-container {
-	background-color: #000;
-	border-radius: 5px;
-	opacity: 0.5;
-	margin-top: 60px;
-	overflow: auto;
-	word-wrap: break-word;
-	height: 70%;
+    background-color: #000;
+    border-radius: 5px;
+    opacity: 0.5;
+    margin-top: 60px;
+    overflow: auto;
+    word-wrap: break-word;
+    height: 70%;
 }
 .hidden-1 p, .hidden-2 p, .hidden-3 p {
-	padding: 10px 20px;
-	margin-top: 15px;
-	text-align: justify;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-align: justify;
 }
 .hidden-2 {
-	background-color: #0f0;
-	color: #fff;
+    background-color: #0f0;
+    color: #fff;
 }
 .hidden-3 {
-	background-color: #00f;
-	color: #fff;
+    background-color: #00f;
+    color: #fff;
 }
+footer {
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+.contact {
+    width: 20%;
+}
+.contact1 {
+    width: 40%;
+}
+.contact2 {
+    width: 40%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+.btn {
+    color: black;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+    box-shadow: 5px 7px #555652;
+    margin: 15px auto;
+    transition: all 0.5s;
+}
+.btn:hover {
+    opacity: 1;
+    font-weight: bold;
+}
+.btn:active {
+    position: relative;
+    top: 7px;
+    left: 5px;
+    box-shadow: none;
+}
+.menu {
+    background-color: #a6e22b;
+}
+
+.section-title {
+    padding: 10px 20px;
+    border-bottom: 2px solid #3b6994;
+    background-color: rgba(184,204,238,0.5);
+    color: #3b6994;
+}
+input, textarea {
+    width: 300px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #3b6994;
+    margin-left: 20px;
+}
+/*
 input {
 	width: 150px;
 	padding-right:200px;
@@ -163,70 +224,9 @@ input {
 textarea {
 	width: 200px;
 }
-footer {
-	display: flex;
-	width: 100%;
-	height: 20%;
-}
-.contact {
-	width: 20%;
-}
-.contact1 {
-	width: 40%;
-}
-.contact2 {
-	width: 40%;
-}
-
-.container {
-	width: 100%;
-	display: flex;
-}
-.btn {
-  color: black;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  padding: 10px;
-  margin-top: 25px;
-  cursor: pointer;
-  box-shadow: 5px 7px #555652;
-  margin: 15px auto;
-  transition: all 0.5s;
-}
-.btn:hover {
-  opacity: 1;
-  font-weight: bold;
-}
-.btn:active {
-  position: relative;
-  top: 7px;
-  left: 5px;
-  box-shadow: none;
-}
-.menu {
-	background-color: #a6e22b;
-}
-
-.section-title {
-	padding: 10px 20px;
-	border-bottom: 2px solid #3b6994;
-	background-color: rgba(184,204,238,0.5);
-	color: #3b6994;
-}
-input, textarea {
-	width: 300px;
-	padding: 10px 20px;
-	border-radius: 5px;
-	border: 2px solid #3b6994;
-	margin-left: 20px;
-}
-/*
 header {
 	width: 100%;
 	height: 10%;
-	
-	
 	background-color: #26d0c9;
 	color: #fff;
 }
@@ -257,7 +257,6 @@ header {
 .main-menu {
 	width: 100%;
 	height: 60%;
-	
 }
 .menu-left {
 	width: 25%;
@@ -303,7 +302,3 @@ footer {
 	color:white;
 }
 */
-
-
-
-
