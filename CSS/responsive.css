@@ -1,11 +1,13 @@
 @media (max-width: 670px) {
 
-    input, textarea {
-        width: 100px;
-        padding: 5px 10px;
-        border-radius: 5px;
-        border: 1px solid #3b6994;
-        margin-left: 10px;
+    .header-logo {
+        width: 30%;
+    }
+    .header-title {
+        width: 40%;
+    }
+    .header-login {
+        width: 30%;
     }
 
 }
