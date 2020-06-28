@@ -218,6 +218,18 @@ input, textarea {
     border: 2px solid #3b6994;
     margin-left: 20px;
 }
+
+@media screen and only (max-width: 670px) {
+
+    input, textarea {
+        width: 300px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 2px solid #3b6994;
+        margin-left: 20px;
+    }
+
+}
 /*
 input {
 	width: 150px;
